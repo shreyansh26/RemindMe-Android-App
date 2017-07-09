@@ -1,5 +1,7 @@
-Documentation - Remind Me   Author- Shreyansh Singh
-===================================================
+Documentation - RemindMe
+========================
+
+## Author- Shreyansh Singh  
 
 Remind Me is an Android App, created using the Android Studio IDE. It is basically a Reminder App which asks for the 
 content of the Reminder that the user wants to put up, whether the user wants the notification  to repeat(update) after
@@ -15,5 +17,5 @@ To Delete the reminder all you have to do is just swipe right/left to remove the
 
 The .apk file of the app is along with this README. Just install the .apk file to use the app.  
 
-The demo video of the app is available (here)[https://drive.google.com/open?id=0BwSLQnNZUNnSUU5LZ3pUR1NrVzA]
+The demo video of the app is available [here](https://drive.google.com/open?id=0BwSLQnNZUNnSUU5LZ3pUR1NrVzA)
 
