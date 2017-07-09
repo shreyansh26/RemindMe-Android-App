@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:background="#FFFF99"
+    tools:context="com.example.shreyanshsingh.remindme.MainActivity">
+
+    <TextView
+        android:text="See notification panel above"
+        android:layout_width="80dp"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:fontFamily="sans-serif"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Swipe reminder to right / left"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:textSize="15sp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="sans-serif"
+        android:layout_below="@+id/textView5"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="3. Delete Reminder - "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:id="@+id/textView7"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-light"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <Button
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/round_button"
+        android:onClick="Click"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="+"
+        android:id="@+id/button3"
+        android:layout_marginBottom="61dp"
+        android:layout_above="@+id/textView5"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4" />
+
+    <TextView
+        android:text="1. Add Reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#000000"
+        android:layout_alignBaseline="@+id/button3"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_alignLeft="@+id/remind"
+        android:layout_alignStart="@+id/remind" />
+
+    <TextView
+        android:text="2. View Reminders -"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:id="@+id/textView4"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#000000"
+        android:layout_below="@+id/button3"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/remind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:textColor="#2196F3"
+        android:textSize="32sp"
+        android:layout_marginTop="17dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

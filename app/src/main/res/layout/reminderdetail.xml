@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#FFFF99"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:fontFamily="sans-serif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textColor="#000000"
+        android:padding="16dp"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textCapSentences"
+        android:hint="Your Reminder"
+        android:ems="10"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:id="@+id/title"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <Switch
+        android:text="Repeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="57dp"
+        android:id="@+id/switch2"
+        android:textSize="25sp"
+        android:showText="true"
+        android:textOn="Yes"
+        android:textOff="No"
+        android:switchMinWidth="56dp"
+        android:thumbTextPadding="5sp"
+        android:switchPadding="30sp"/>
+
+    <TextView
+        android:text="Every"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switch2"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginTop="52dp"
+        android:id="@+id/textView3"
+        android:textColor="#000000"
+        android:layout_marginLeft="8dp"
+        android:textSize="25sp" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Time"
+        android:ems="10"
+        android:id="@+id/everytime"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toRightOf="@+id/everytime"
+        android:layout_toEndOf="@+id/everytime"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/spinner"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:text="Stay for"
+        android:textSize="25sp"
+        android:paddingLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/everytime"
+        android:textColor="#000000"
+        android:layout_marginTop="41dp"
+        android:id="@+id/textView6" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Time"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:id="@+id/time2"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_toRightOf="@+id/textView6"
+        android:layout_toEndOf="@+id/textView6" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_toRightOf="@id/time2"
+        android:id="@+id/spinner3" />
+
+    <Button
+        android:text="Set Reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="74dp"
+        android:id="@+id/button"
+        android:layout_below="@+id/time2"
+        android:layout_centerHorizontal="true"
+        android:onClick="setReminder"/>
+
+
+</RelativeLayout>
